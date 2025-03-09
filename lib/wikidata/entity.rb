@@ -15,7 +15,7 @@ module Wikidata
 
     def title
       return labels['mul'].value if labels && labels.key?('mul')
-      return labels['en'].value if labels && labels.key('en')
+      return labels['en'].value if labels && labels.key?('en')
       return sitelinks['en'].value if sitelinks && sitelinks.key?('en')
 
       title
